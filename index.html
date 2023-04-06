@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <div class=" container">
+        <!-- Creamos el display o pantalla de la calculadora -->
+
+        <div>
+            <button onclick="borrar()">C</button>
+            <input type="text" name="" id="display">
+        </div>
+
+        <!-- Primera fila de botones -->
+
+        <div>
+            <button onclick="agregar('7')">7</button>
+            <button onclick="agregar('8')">8</button>
+            <button onclick="agregar('9')">9</button>
+            <button onclick="operacion('/')">/</button>
+        </div>
+
+        <!-- Segunda fila de botones -->
+
+        <div>
+            <button onclick="agregar('4')">4</button>
+            <button onclick="agregar('5')">5</button>
+            <button onclick="agregar('6')">6</button>
+            <button onclick="operacion('-')">-</button>
+        </div>
+        <!-- Tecera fila de botones -->
+        <div>
+            <button onclick="agregar('1')">1</button>
+            <button onclick="agregar('2')">2</button>
+            <button onclick="agregar('3')">3</button>
+            <button onclick="operacion('*')">x</button>
+        </div>
+        <!-- Cuarta fila de botones -->
+        <div>
+            <button onclick="agregar('.')">.</button>
+            <button onclick="agregar('0')">0</button>
+            <button onclick="operacion('+')">+</button>
+            <button onclick="calcular()"> = </button>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
